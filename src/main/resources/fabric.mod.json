@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "exclusive_break",
+  "version": "${version}",
+  "name": "Exclusive Break",
+  "description": "Stops you from breaking the wrong block.",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/exclusive_break/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "dev.err0rw0lf.exclusive_break.client.Exclusive_breakDataGenerator"
+    ],
+    "client": [
+      "dev.err0rw0lf.exclusive_break.client.Exclusive_breakClient"
+    ],
+    "main": [
+      "dev.err0rw0lf.exclusive_break.Exclusive_break"
+    ]
+  },
+  "mixins": [
+    "exclusive_break.mixins.json",
+    {
+      "config": "exclusive_break.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
