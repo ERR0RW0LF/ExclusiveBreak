@@ -6,5 +6,6 @@ public class Exclusive_breakClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        Commands.Init();
     }
 }
