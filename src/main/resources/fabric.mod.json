@@ -8,7 +8,7 @@
   "contact": {},
   "license": "MIT",
   "icon": "assets/exclusive_break/icon.png",
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "fabric-datagen": [
       "dev.err0rw0lf.exclusive_break.client.Exclusive_breakDataGenerator"
